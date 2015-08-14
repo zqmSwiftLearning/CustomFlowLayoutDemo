@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B4B2ACD1B7D707C0045D6F7 /* Cat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B4B2ACC1B7D707C0045D6F7 /* Cat.plist */; };
 		9B7403021B7C91C9008236FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7403011B7C91C9008236FF /* AppDelegate.swift */; };
 		9B7403041B7C91C9008236FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7403031B7C91C9008236FF /* ViewController.swift */; };
 		9B7403071B7C91C9008236FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7403051B7C91C9008236FF /* Main.storyboard */; };
 		9B7403091B7C91C9008236FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7403081B7C91C9008236FF /* Images.xcassets */; };
 		9B74030C1B7C91C9008236FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B74030A1B7C91C9008236FF /* LaunchScreen.xib */; };
 		9B7403181B7C91C9008236FF /* CustomFlowLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7403171B7C91C9008236FF /* CustomFlowLayoutDemoTests.swift */; };
+		9B7403241B7C9F93008236FF /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7403221B7C9F93008236FF /* CatCollectionViewCell.swift */; };
+		9B7403251B7C9F93008236FF /* CatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7403231B7C9F93008236FF /* CatCollectionViewCell.xib */; };
+		9B7403271B7CA2C9008236FF /* LineCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7403261B7CA2C9008236FF /* LineCollectionViewFlowLayout.swift */; };
+		9BFBF8301B7CC3A0007437A5 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFBF82F1B7CC3A0007437A5 /* CatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B4B2ACC1B7D707C0045D6F7 /* Cat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cat.plist; sourceTree = "<group>"; };
 		9B7402FC1B7C91C9008236FF /* CustomFlowLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFlowLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7403001B7C91C9008236FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7403011B7C91C9008236FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		9B7403111B7C91C9008236FF /* CustomFlowLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomFlowLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7403161B7C91C9008236FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7403171B7C91C9008236FF /* CustomFlowLayoutDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayoutDemoTests.swift; sourceTree = "<group>"; };
+		9B7403221B7C9F93008236FF /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B7403231B7C9F93008236FF /* CatCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatCollectionViewCell.xib; sourceTree = "<group>"; };
+		9B7403261B7CA2C9008236FF /* LineCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		9BFBF82F1B7CC3A0007437A5 /* CatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B4B2ACB1B7D70540045D6F7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9B4B2ACC1B7D707C0045D6F7 /* Cat.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		9B7402F31B7C91C9008236FF = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +95,9 @@
 		9B7402FE1B7C91C9008236FF /* CustomFlowLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9B4B2ACB1B7D70540045D6F7 /* Resource */,
+				9BFBF82E1B7CC386007437A5 /* Model */,
+				9B7403211B7C9F6B008236FF /* View */,
 				9B7403011B7C91C9008236FF /* AppDelegate.swift */,
 				9B7403031B7C91C9008236FF /* ViewController.swift */,
 				9B7403051B7C91C9008236FF /* Main.storyboard */,
@@ -110,6 +131,24 @@
 				9B7403161B7C91C9008236FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B7403211B7C9F6B008236FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B7403221B7C9F93008236FF /* CatCollectionViewCell.swift */,
+				9B7403231B7C9F93008236FF /* CatCollectionViewCell.xib */,
+				9B7403261B7CA2C9008236FF /* LineCollectionViewFlowLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BFBF82E1B7CC386007437A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BFBF82F1B7CC3A0007437A5 /* CatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B7403071B7C91C9008236FF /* Main.storyboard in Resources */,
+				9B7403251B7C9F93008236FF /* CatCollectionViewCell.xib in Resources */,
+				9B4B2ACD1B7D707C0045D6F7 /* Cat.plist in Resources */,
 				9B74030C1B7C91C9008236FF /* LaunchScreen.xib in Resources */,
 				9B7403091B7C91C9008236FF /* Images.xcassets in Resources */,
 			);
@@ -212,7 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7403241B7C9F93008236FF /* CatCollectionViewCell.swift in Sources */,
 				9B7403041B7C91C9008236FF /* ViewController.swift in Sources */,
+				9B7403271B7CA2C9008236FF /* LineCollectionViewFlowLayout.swift in Sources */,
+				9BFBF8301B7CC3A0007437A5 /* CatModel.swift in Sources */,
 				9B7403021B7C91C9008236FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +455,7 @@
 				9B74031D1B7C91C9008236FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B74031E1B7C91C9008236FF /* Build configuration list for PBXNativeTarget "CustomFlowLayoutDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +464,7 @@
 				9B7403201B7C91C9008236FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
