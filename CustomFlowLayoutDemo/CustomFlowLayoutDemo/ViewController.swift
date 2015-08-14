@@ -52,7 +52,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.collectionView = UICollectionView(frame: CGRectMake(0, 40, UIScreen.mainScreen().bounds.size.width, 400), collectionViewLayout: LineCollectionViewFlowLayout())
         self.collectionView.registerNib(UINib(nibName: "CatCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: kCellReuseID)
         self.collectionView.backgroundColor = UIColor.clearColor()
-//        self.collectionView.showsHorizontalScrollIndicator = false
+//        self.collectionView.bounces = false
+        self.collectionView.showsHorizontalScrollIndicator = false
         self.collectionView.delegate  = self
         self.collectionView.dataSource = self
         self.view.addSubview(self.collectionView)
@@ -112,5 +113,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         CatCollectionViewCell.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
     #endif
     }
+    
+    // MARK: - UIScrollViewDelegate
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        self.pageControl.currentPage = Int(scrollView.contentOffset.x / 260.0 + 0.5)
+    }
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        self.pageControl.currentPage = Int(scrollView.contentOffset.x / 260.0 + 0.5)
+    }
+
 }
 
