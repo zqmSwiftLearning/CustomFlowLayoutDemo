@@ -58,7 +58,10 @@ class LineCollectionViewFlowLayout: UICollectionViewFlowLayout {
             }
         }
         
-
+//        if adjustOffsetX == -12.5 {
+//            adjustOffsetX=0
+//        }
+        
         return CGPointMake(proposedContentOffset.x + adjustOffsetX, proposedContentOffset.y)
     }
     
